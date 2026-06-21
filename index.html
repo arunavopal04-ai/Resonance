@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonance Market</title>
+    <link rel="stylesheet" href="store.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Resonance Market home">
+        <span class="brand-mark">R</span>
+        <span>Resonance Market</span>
+      </a>
+
+      <form class="search-form" data-search-form>
+        <label>
+          <span>Search products</span>
+          <input
+            data-search-input
+            type="search"
+            placeholder="Search electronics, clothing, watches, stationery"
+            autocomplete="off"
+          >
+        </label>
+        <button type="submit">Search</button>
+      </form>
+
+      <nav class="account-nav" aria-label="Account and cart">
+        <a href="#login">Login</a>
+        <a href="#signup">Sign up</a>
+        <button class="cart-button" type="button" data-cart-toggle>
+          Cart <span data-cart-count>0</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-media">
+          <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1600&q=88" alt="Premium shopping bags and products on a clean retail counter">
+        </div>
+        <div class="hero-copy">
+          <p>Curated online shopping</p>
+          <h1>Premium products for work, style, gifting, and everyday life.</h1>
+          <div class="hero-actions">
+            <a href="#products">Shop products</a>
+            <a href="#account">Create account</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-strip" aria-label="Product categories">
+        <button class="active" type="button" data-category="all">All</button>
+        <button type="button" data-category="electronics">Electronics</button>
+        <button type="button" data-category="clothing">Clothing</button>
+        <button type="button" data-category="watches">Watches</button>
+        <button type="button" data-category="stationery">Stationery</button>
+      </section>
+
+      <section class="section-head" id="products">
+        <div>
+          <p>Featured collection</p>
+          <h2><span data-product-count>12</span> products ready to shop</h2>
+        </div>
+        <span>Electronics, clothing, watches, and stationery for men and women</span>
+      </section>
+
+      <section class="product-grid" data-product-grid aria-label="Products">
+        <article class="product-card" data-product-card data-category="electronics" data-search="novabook air 14 electronics work and study best seller slim aluminum laptop vivid display fast storage battery">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85" alt="NovaBook Air 14">
+            <span>Best seller</span>
+          </div>
+          <div class="product-body">
+            <div class="product-meta"><span>Electronics</span><span>Work and study</span></div>
+            <h3>NovaBook Air 14</h3>
+            <p>Slim aluminum laptop with a vivid display, fast storage, and all-day battery life.</p>
+            <div class="rating-row"><strong>$899.00</strong><span>4.8 / 5</span></div>
+            <div class="product-actions">
+              <button type="button" data-buy-now data-id="nova-ultrabook" data-name="NovaBook Air 14" data-price="899">Buy now</button>
+              <button type="button" data-add-cart data-id="nova-ultrabook" data-name="NovaBook Air 14" data-price="899">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-product-card data-category="electronics" data-search="pulse noise-canceling headphones electronics travel audio wireless over-ear bass cushions">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85" alt="Pulse Noise-Canceling Headphones">
+            <span>New</span>
+          </div>
+          <div class="product-body">
+            <div class="product-meta"><span>Electronics</span><span>Travel audio</span></div>
+            <h3>Pulse Noise-Canceling Headphones</h3>
+            <p>Wireless over-ear headphones with deep bass, soft cushions, and smart noise control.</p>
+            <div class="rating-row"><strong>$189.00</strong><span>4.7 / 5</span></div>
+            <div class="product-actions">
+              <button type="button" data-buy-now data-id="pulse-headphones" data-name="Pulse Noise-Canceling Headphones" data-price="189">Buy now</button>
+              <button type="button" data-add-cart data-id="pulse-headphones" data-name="Pulse Noise-Canceling Headphones" data-price="189">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-product-card data-category="electronics" data-search="canvas pro tablet electronics creative work touch display pencil notes media">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=900&q=85" alt="Canvas Pro Tablet">
+            <span>Hot deal</span>
+          </div>
+          <div class="product-body">
+            <div class="product-meta"><span>Electronics</span><span>Creative work</span></div>
+            <h3>Canvas Pro Tablet</h3>
+            <p>Bright touch display, pencil support, and lightweight design for notes and media.</p>
+            <div class="rating-row"><strong>$449.00</strong><span>4.6 / 5</span></div>
+            <div class="product-actions">
+              <button type="button" data-buy-now data-id="pixel-tab" data-name="Canvas Pro Tablet" data-price="449">Buy now</button>
+              <button type="button" data-add-cart data-id="pixel-tab" data-name="Canvas Pro Tablet" data-price="449">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-product-card data-category="clothing" data-search="women tailored linen blazer clothing women office evening breathable premium">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="Women's Tailored Linen Blazer">
+            <span>Premium</span>
+          </div>
+          <div class="product-body">
+            <div class="product-meta"><span>Clothing</span><span>Women</span></div>
+            <h3>Women's Tailored Linen Blazer</h3>
+            <p>A sharp breathable blazer that moves from office styling to evening plans.</p>
+            <div class="rating-row"><strong>$74.00</strong><span>4.7 / 5</span></div>
+            <div class="product-actions">
+              <button type="button" data-buy-now data-id="linen-blazer-women" data-name="Women's Tailored Linen Blazer" data-price="74">Buy now</button>
+              <button type="button" data-add-cart data-id="linen-blazer-women" data-name="Women's Tailored Linen Blazer" data-price="74">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-product-card data-category="clothing" data-search="men oxford cotton shirt clothing men classic tailored fit soft cotton">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=900&q=85" alt="Men's Oxford Cotton Shirt">
+            <span>Classic</span>
+          </div>
+          <div class="product-body">
+            <div class="product-meta"><span>Clothing</span><span>Men</span></div>
+            <h3>Men's Oxford Cotton Shirt</h3>
+            <p>Crisp everyday shirt with a tailored fit, durable stitching, and soft cotton feel.</p>
+            <div class="rating-row"><strong>$42.00</strong><span>4.5 / 5</span></div>
+            <div class="product-actions">
+              <button type="button" data-buy-now data-id="cotton-shirt-men" data-name="Men's Oxford Cotton Shirt" data-price="42">Buy now</button>
+              <button type="button" data-add-cart data-id="cotton-shirt-men" data-name="Men's Oxford Cotton Shirt" data-price="42">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-product-card data-category="clothing" data-search="unisex cloud fleece hoodie clothing men women comfort relaxed warm lining">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85" alt="Unisex Cloud Fleece Hoodie">
+            <span>Comfort pick</span>
+          </div>
+          <div class="product-body">
+            <div class="product-meta"><span>Clothing</span><span>Men and women</span></div>
+            <h3>Unisex Cloud Fleece Hoodie</h3>
+            <p>Dense fleece hoodie with a relaxed cut, polished finish, and warm brushed lining.</p>
+            <div class="rating-row"><strong>$58.00</strong><span>4.8 / 5</span></div>
+            <div class="product-actions">
+              <button type="button" data-buy-now data-id="streetwear-hoodie" data-name="Unisex Cloud Fleece Hoodie" data-price="58">Buy now</button>
+              <button type="button" data-add-cart data-id="streetwear-hoodie" data-name="Unisex Cloud Fleece Hoodie" data-price="58">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-product-card data-category="watches" data-search="men chronograph steel watch watches men stainless luxury">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=900&q=85" alt="Men's Chronograph Steel Watch">
+            <span>Luxury look</span>
+          </div>
+          <div class="product-body">
+            <div class="product-meta"><span>Watches</span><span>Men</span></div>
+            <h3>Men's Chronograph Steel Watch</h3>
+            <p>Brushed stainless steel case, sapphire-style glass, and precise chronograph detail.</p>
+            <div class="rating-row"><strong>$165.00</strong><span>4.6 / 5</span></div>
+            <div class="product-actions">
+              <button type="button" data-buy-now data-id="chrono-men" data-name="Men's Chronograph Steel Watch" data-price="165">Buy now</button>
+              <button type="button" data-add-cart data-id="chrono-men" data-name="Men's Chronograph Steel Watch" data-price="165">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-product-card data-category="watches" data-search="women rose gold minimal watch watches women elegant slim mesh strap">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1548169874-53e85f753f1e?auto=format&fit=crop&w=900&q=85" alt="Women's Rose Gold Minimal Watch">
+            <span>Elegant</span>
+          </div>
+          <div class="product-body">
+            <div class="product-meta"><span>Watches</span><span>Women</span></div>
+            <h3>Women's Rose Gold Minimal Watch</h3>
+            <p>A slim rose gold watch with a clean dial, mesh strap, and refined everyday profile.</p>
+            <div class="rating-row"><strong>$132.00</strong><span>4.7 / 5</span></div>
+            <div class="product-actions">
+              <button type="button" data-buy-now data-id="rose-watch-women" data-name="Women's Rose Gold Minimal Watch" data-price="132">Buy now</button>
+              <button type="button" data-add-cart data-id="rose-watch-women" data-name="Women's Rose Gold Minimal Watch" data-price="132">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-product-card data-category="watches" data-search="activefit smart watch watches men women fitness health gps display">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=900&q=85" alt="ActiveFit Smart Watch">
+            <span>Fitness ready</span>
+          </div>
+          <div class="product-body">
+            <div class="product-meta"><span>Watches</span><span>Men and women</span></div>
+            <h3>ActiveFit Smart Watch</h3>
+            <p>Health tracking, calls, GPS workouts, and a bright always-on display.</p>
+            <div class="rating-row"><strong>$219.00</strong><span>4.8 / 5</span></div>
+            <div class="product-actions">
+              <button type="button" data-buy-now data-id="smart-watch" data-name="ActiveFit Smart Watch" data-price="219">Buy now</button>
+              <button type="button" data-add-cart data-id="smart-watch" data-name="ActiveFit Smart Watch" data-price="219">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-product-card data-category="stationery" data-search="executive journal set stationery office gift pen premium paper">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=900&q=85" alt="Executive Journal Set">
+            <span>Giftable</span>
+          </div>
+          <div class="product-body">
+            <div class="product-meta"><span>Stationery</span><span>Office</span></div>
+            <h3>Executive Journal Set</h3>
+            <p>Hardbound dotted journal with premium paper, bookmark ribbon, and matching pen.</p>
+            <div class="rating-row"><strong>$28.00</strong><span>4.6 / 5</span></div>
+            <div class="product-actions">
+              <button type="button" data-buy-now data-id="journal-set" data-name="Executive Journal Set" data-price="28">Buy now</button>
+              <button type="button" data-add-cart data-id="journal-set" data-name="Executive Journal Set" data-price="28">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-product-card data-category="stationery" data-search="modular desk organizer stationery desk setup pens notes clips organized">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85" alt="Modular Desk Organizer">
+            <span>Organized</span>
+          </div>
+          <div class="product-body">
+            <div class="product-meta"><span>Stationery</span><span>Desk setup</span></div>
+            <h3>Modular Desk Organizer</h3>
+            <p>Stackable compartments for pens, sticky notes, cards, clips, and daily essentials.</p>
+            <div class="rating-row"><strong>$35.00</strong><span>4.5 / 5</span></div>
+            <div class="product-actions">
+              <button type="button" data-buy-now data-id="desk-organizer" data-name="Modular Desk Organizer" data-price="35">Buy now</button>
+              <button type="button" data-add-cart data-id="desk-organizer" data-name="Modular Desk Organizer" data-price="35">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-product-card data-category="stationery" data-search="studio artist stationery kit stationery creative pencils markers drawing pad top rated">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=85" alt="Studio Artist Stationery Kit">
+            <span>Top rated</span>
+          </div>
+          <div class="product-body">
+            <div class="product-meta"><span>Stationery</span><span>Creative</span></div>
+            <h3>Studio Artist Stationery Kit</h3>
+            <p>Sketch pencils, fine liners, color markers, erasers, ruler, and premium drawing pad.</p>
+            <div class="rating-row"><strong>$46.00</strong><span>4.9 / 5</span></div>
+            <div class="product-actions">
+              <button type="button" data-buy-now data-id="artist-kit" data-name="Studio Artist Stationery Kit" data-price="46">Buy now</button>
+              <button type="button" data-add-cart data-id="artist-kit" data-name="Studio Artist Stationery Kit" data-price="46">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="empty-state hidden" data-empty-state>
+          No products matched that search. Try another keyword or browse all categories.
+        </div>
+      </section>
+
+      <section class="account-section" id="account">
+        <form class="account-card" id="login">
+          <p>Welcome back</p>
+          <h2>Login</h2>
+          <label>
+            <span>Email address</span>
+            <input type="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            <span>Password</span>
+            <input type="password" placeholder="Enter password" required>
+          </label>
+          <button type="submit">Login</button>
+        </form>
+
+        <form class="account-card" id="signup">
+          <p>New customer</p>
+          <h2>Create account</h2>
+          <label>
+            <span>Full name</span>
+            <input type="text" placeholder="Your name" required>
+          </label>
+          <label>
+            <span>Email address</span>
+            <input type="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            <span>Password</span>
+            <input type="password" placeholder="Create password" required>
+          </label>
+          <button type="submit">Sign up</button>
+        </form>
+      </section>
+    </main>
+
+    <aside class="cart-panel" data-cart-panel aria-label="Shopping cart">
+      <div class="cart-head">
+        <div>
+          <p>Your bag</p>
+          <h2>Shopping cart</h2>
+        </div>
+        <button type="button" data-cart-close aria-label="Close cart">Close</button>
+      </div>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-total">
+        <span>Total</span>
+        <strong data-cart-total>$0.00</strong>
+      </div>
+      <button class="checkout-button" type="button" data-checkout>Checkout</button>
+    </aside>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+    <script src="store.js"></script>
+  </body>
+</html>
